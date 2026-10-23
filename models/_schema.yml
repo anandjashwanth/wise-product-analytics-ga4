@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: int_sessions
+    description: One row per session, with a 1/0 flag for each funnel step.
+    columns:
+      - name: session_key
+        description: user_pseudo_id plus ga_session_id.
+        data_tests: [unique, not_null]
+  - name: dim_users
+    description: One row per user.
+    columns:
+      - name: user_pseudo_id
+        data_tests: [unique, not_null]
+  - name: fct_daily_kpis
+    description: Daily users, sessions, conversion and revenue.
+    columns:
+      - name: date
+        data_tests: [unique, not_null]
