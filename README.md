@@ -1,4 +1,3 @@
-# wise-product-analytics-ga4
 
 # Where do online shoppers drop out, and what would I test to fix it?
 
